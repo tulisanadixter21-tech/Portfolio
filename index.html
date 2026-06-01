@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== CURSOR ===================== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-name">Chups</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <!-- Animated grid background -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <!-- Floating blobs for depth -->
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="line line-1">Dixter</span>
+        <span class="line line-2">Tulisana</span>
+      </h1>
+      <p class="hero-tagline">
+        Writing code, building games, and figuring out how things tick.<br />
+        Welcome to my digital sandbox.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>Explore My Sandbox</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <!-- Terminal-style status bar -->
+      <div class="hero-status">
+        <span class="status-item"><span class="status-dot green"></span>Java</span>
+        <span class="status-item"><span class="status-dot blue"></span>Game Dev</span>
+        <span class="status-item"><span class="status-dot orange"></span>Web Dev</span>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <div class="about-left">
+          <span class="section-label">About</span>
+          <h2 class="section-title">Passionate about<br/><em>Creating games</em>.</h2>
+        </div>
+        
+        <div class="about-right">
+          <p class="about-bio">
+            I’m an Information Technology student and a compulsive builder. I write code because it's fun, and my favorite thing to do is bounce between different challenges to see how they tick.
+          </p>
+          <p class="about-bio">
+            I'm driven by the simple joy of experimenting, problem-solving, and making ideas work. For me, tech is the ultimate sandbox.
+          </p>
+          
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Core Skills</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Curiosity</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// 02 — skills</span>
+        <h2 class="section-title">What I work with.</h2>
+      </div>
+      <div class="skills-grid">
+ 
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="10" y1="13" x2="10" y2="17"/>
+              <line x1="14" y1="13" x2="14" y2="17"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Java</h3>
+          <p class="skill-desc">Object-oriented programming, data structures, and building applications from the ground up with clean, readable code.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+        </div>
+ 
+        <div class="skill-card" data-delay="1">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">HTML</h3>
+          <p class="skill-desc">Semantic markup, accessible document structure, and building solid foundations for web pages and applications.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+        </div>
+ 
+        <div class="skill-card" data-delay="2">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 12h8M12 8v8"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">CSS</h3>
+          <p class="skill-desc">Responsive layouts with Flexbox and Grid, animations, and crafting clean, polished user interfaces.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+        </div>
+ 
+        <div class="skill-card" data-delay="3">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">JavaScript</h3>
+          <p class="skill-desc">DOM manipulation, event handling, async logic, and bringing interactivity to life in the browser.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+        </div>
+ 
+        <div class="skill-card" data-delay="4">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Laravel</h3>
+          <p class="skill-desc">PHP framework for building web backends — routing, Eloquent ORM, Blade templating, and RESTful APIs.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">Things I've built.</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: Tower Defense -->
+        <article class="project-card featured" data-delay="0">
+          <div class="project-img-wrap">
+            <div class="project-img td-img">
+              <!-- SVG placeholder: tower defense aesthetic -->
+              <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" class="proj-svg">
+                <rect width="600" height="340" fill="#0a0f1a"/>
+                <!-- Grid lines -->
+                <g stroke="#1a2535" stroke-width="1">
+                  <line x1="0" y1="68" x2="600" y2="68"/><line x1="0" y1="136" x2="600" y2="136"/>
+                  <line x1="0" y1="204" x2="600" y2="204"/><line x1="0" y1="272" x2="600" y2="272"/>
+                  <line x1="100" y1="0" x2="100" y2="340"/><line x1="200" y1="0" x2="200" y2="340"/>
+                  <line x1="300" y1="0" x2="300" y2="340"/><line x1="400" y1="0" x2="400" y2="340"/>
+                  <line x1="500" y1="0" x2="500" y2="340"/>
+                </g>
+                <!-- Path -->
+                <polyline points="0,170 150,170 150,100 350,100 350,240 500,240 500,170 600,170"
+                  fill="none" stroke="#1e3a5f" stroke-width="40" stroke-linejoin="round"/>
+                <!-- Towers -->
+                <rect x="80" y="140" width="40" height="40" rx="4" fill="#00d4aa" opacity="0.9"/>
+                <rect x="88" y="130" width="10" height="15" rx="2" fill="#00d4aa"/>
+                <rect x="102" y="130" width="10" height="15" rx="2" fill="#00d4aa"/>
+                <rect x="220" y="55" width="40" height="40" rx="4" fill="#ff6b35" opacity="0.9"/>
+                <rect x="228" y="45" width="10" height="15" rx="2" fill="#ff6b35"/>
+                <rect x="242" y="45" width="10" height="15" rx="2" fill="#ff6b35"/>
+                <rect x="420" y="195" width="40" height="40" rx="4" fill="#7c3aed" opacity="0.9"/>
+                <rect x="428" y="185" width="10" height="15" rx="2" fill="#7c3aed"/>
+                <rect x="442" y="185" width="10" height="15" rx="2" fill="#7c3aed"/>
+                <!-- Enemies (circles on path) -->
+                <circle cx="60" cy="170" r="10" fill="#ef4444"/>
+                <circle cx="100" cy="170" r="10" fill="#ef4444" opacity="0.7"/>
+                <circle cx="180" cy="130" r="10" fill="#ef4444" opacity="0.5"/>
+                <!-- Range rings -->
+                <circle cx="100" cy="160" r="55" fill="none" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+                <circle cx="240" cy="75" r="55" fill="none" stroke="#ff6b35" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+                <!-- HUD -->
+                <rect x="10" y="10" width="120" height="30" rx="4" fill="#0d1b2a" opacity="0.9"/>
+                <text x="20" y="29" font-family="monospace" font-size="12" fill="#00d4aa">❤ 20  🪙 450</text>
+                <!-- Wave indicator -->
+                <rect x="460" y="10" width="130" height="30" rx="4" fill="#0d1b2a" opacity="0.9"/>
+                <text x="470" y="29" font-family="monospace" font-size="12" fill="#ff6b35">WAVE 3 / 10</text>
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <span class="overlay-label">Java · Game Dev</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">01</div>
+            <h3 class="project-title">2D Tower Defense Game</h3>
+            <p class="project-desc">
+              A fully playable tower defense game built in Java from scratch. Features a fixed-timestep
+              game loop, custom rendering engine, pathfinding for enemy waves, and an OOP tower/entity
+              architecture with upgradeable units.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Game Loop</span>
+              <span class="tag">OOP</span>
+              <span class="tag">Rendering</span>
+              <span class="tag">Collision</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Let's build<br/><em>something</em>.</h2>
+          <p class="contact-sub">
+            Open to internships, collaborations, and interesting problems.
+            Drop me a message — I read everything.
+          </p>
+          <div class="contact-socials">
+            
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span id="btnText">Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+            <p class="form-success" id="formSuccess" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">
+          <span class="logo-bracket"></span>Chups
+        </span>
+        <span class="footer-copy">2026</span>
+        <a href="#hero" class="back-top" aria-label="Back to top">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 13V3M3 8l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
